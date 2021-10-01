@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
-export class DemoHelperService {
+export class DemoHelper {
 
   constructor(protected router: Router) { }
 
