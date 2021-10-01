@@ -8,12 +8,17 @@
     "test": "nx test"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@ionic/angular": "^5.5.2"
+  },
   "devDependencies": {
+    "@nrwl/angular": "12.9.0",
     "@nrwl/cli": "12.9.0",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/tao": "12.9.0",
     "@nrwl/workspace": "12.9.0",
+    "@nxtend/capacitor": "^11.0.0",
+    "@nxtend/ionic-angular": "^11.1.1",
     "@types/node": "14.14.33",
     "prettier": "^2.3.1",
     "typescript": "~4.3.5"
