@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ionic-starter-nx/demo-lib": ["libs/demo-lib/src/index.ts"],
+      "@ionic-starter-nx/shared-assets": ["libs/shared-assets/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

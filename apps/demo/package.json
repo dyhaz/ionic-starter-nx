@@ -1,0 +1,6 @@
+{
+  "name": "@ionic-starter-nx/demo",
+  "devDependencies": {
+    "@capacitor/cli": "^2.4.5"
+  }
+}
