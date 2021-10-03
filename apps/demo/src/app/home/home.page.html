@@ -15,7 +15,8 @@
     <h1>Welcome to my-app!</h1>
     <ion-button (click)='navigate()'>Click me</ion-button><br>
     <ion-button (click)='addRandomZoo()'>Add Zoo</ion-button><br>
-    <div *ngFor='let image of images.items'>
+    <div *ngFor='let image of images.items' class="img-wrap">
+      <span class="close" (click)='delete(image)'>&times;</span>
       <img width='100px' height='100px' [src]='image' [alt]='image' />
     </div>
     <strong>Ready to create an app?</strong>

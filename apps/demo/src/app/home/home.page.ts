@@ -32,6 +32,10 @@ export class HomePage implements OnInit {
     });
   }
 
+  async delete(image: string) {
+    await this.demo.deleteCat(image);
+  }
+
   async navigate() {
     await this.demo.navigate();
   }

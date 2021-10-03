@@ -18,12 +18,16 @@ export class DemoHelper {
   async addCat() {
     await this.http.get('https://aws.random.cat/meow').subscribe((result: any) => {
       console.log('file', result);
-      this.store.dispatch(new CatAction(result['file']));
+      this.store.dispatch(new CatAction.AddCat(result['file']));
     });
   }
 
   async getCats() {
     return this.store.selectSnapshot(CatState.getState);
+  }
+
+  async deleteCat(image: string) {
+    this.store.dispatch(new CatAction.RemoveCat(image));
   }
 
   async navigate() {
