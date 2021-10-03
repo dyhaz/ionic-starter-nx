@@ -7,7 +7,9 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgxsModule } from '@ngxs/store';
+import { CatState } from '../../../../libs/demo-lib/src/lib/stores/cat/cat.state';
 import { environment } from '../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +18,8 @@ import { environment } from '../environments/environment';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    NgxsModule.forRoot([ZooState], {
+    HttpClientModule,
+    NgxsModule.forRoot([CatState], {
       developmentMode: !environment.production
     })
   ],
